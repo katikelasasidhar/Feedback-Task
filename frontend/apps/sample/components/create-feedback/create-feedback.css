@@ -1,0 +1,67 @@
+.modal{
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 15%;
+    width: 70%;
+    height: 90%;
+    overflow: auto;
+}
+
+.modal__content{
+    background: rgb(255,255,255) none repeat scroll 0% 0%;   
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border-radius: 10px;
+    padding: 42px;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+    letter-spacing: -.333333px;
+    color: rgb(58,67,116);
+    padding-bottom: 26px;
+    padding-top: 16px;
+}
+
+input{
+    width: 100%;
+    padding: 13px 24px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: rgb(58,67,116);
+    background: rgb(247,248,253) none repeat scroll 0% 0%;   
+    border-radius: 5px;
+    border: medium none;
+}
+
+textarea{
+    width: 100%;
+    resize: none;
+    border: medium none;
+    overflow: auto;
+    outline: none;
+    background: rgb(247,248,253) none repeat scroll 0% 0%;   
+    border-radius: 5px;
+    height: 96px;
+    padding: 24px;
+    font-size: 15px;
+    line-height: 22px;
+    color: rgb(140, 146, 179);
+    margin-bottom: 24px;
+}
+
+.modal__footer{
+    display: flex;
+    align-self: flex-end;
+    gap: 16px;
+}
+
+.modal__button_cancel{
+    color: rgb(242, 244, 254);
+    background: rgb(101,110,163) none repeat scroll 0% 0%;   
+}

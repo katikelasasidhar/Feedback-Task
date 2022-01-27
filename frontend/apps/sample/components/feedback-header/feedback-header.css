@@ -1,0 +1,35 @@
+.feedback__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(55,63,104) none repeat scroll 0% 0%;
+    border-radius: 10px;
+    padding: 20px;
+}
+h3{
+    font-size: 18px;
+    line-height: 26px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: -.25px;
+}
+
+.feedback__button{
+    outline: none;
+    display: inline;
+    padding: 12px 24px;
+    border-radius: 10px;
+    transition: all 0.3s ease 0s;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(242, 244, 254);
+    cursor: pointer;
+    border: medium none;
+    background: rgb(173, 31, 234) none repeat scroll 0% 0%;   
+}
+
+.feedback__button:hover{
+    background: rgb(199, 90, 246) none repeat scroll 0% 0%;   
+    transform: translateX(0rem) translateY(-0.125rem);
+}

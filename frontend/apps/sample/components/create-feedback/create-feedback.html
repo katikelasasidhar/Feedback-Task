@@ -1,0 +1,122 @@
+
+<style>
+    .modal{
+   
+    position: fixed;
+    top: 20%;
+    left: 15%;
+    width: 70%;
+    height: 90%;
+    overflow: auto;
+}
+
+.modal__content{
+    background: rgb(195,188,170);   
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border-radius: 10px;
+    padding: 42px;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+    letter-spacing: -.333333px;
+    color: rgb(58,67,116);
+    padding-bottom: 26px;
+    padding-top: 16px;
+}
+
+input{
+    width: 100%;
+    padding: 13px 24px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: rgb(58,67,116);
+    background: rgb(247,248,253) none repeat scroll 0% 0%;   
+    border-radius: 5px;
+    border: medium none;
+}
+
+textarea{
+    width: 100%;
+    resize: none;
+    border: medium none;
+    overflow: auto;
+    outline: none;
+    background: rgb(247,248,253) none repeat scroll 0% 0%;   
+    border-radius: 5px;
+    height: 96px;
+    padding: 24px;
+    font-size: 15px;
+    line-height: 22px;
+    color: rgb(140, 146, 179);
+    margin-bottom: 24px;
+}
+
+.modal__footer{
+    display: flex;
+    align-self: flex-end;
+    gap: 16px;
+}
+.modal__button{
+    outline: none;
+    display: inline;
+    padding: 12px 24px;
+    border-radius: 10px;
+    transition: all 0.3s ease 0s;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgb(242, 244, 254);
+    cursor: pointer;
+    border: medium none;
+    background: rgb(173, 31, 234) none repeat scroll 0% 0%; 
+}
+.modal__button_cancel{
+    color: rgb(242, 244, 254);
+    background: rgb(101,110,163) none repeat scroll 0% 0%;   
+}
+.feedback__button:hover{
+    background: rgb(199, 90, 246) none repeat scroll 0% 0%;   
+    transform: translateX(0rem) translateY(-0.125rem);
+}
+
+</style>
+
+<div class="modal" id="add-feedback-modal">
+    <div class="modal__content">
+        <div class="modal__header-left">
+            <h1>Add Feedback</h1>
+        </div>
+
+        <div class="modal__body">
+            <form id="add-feedback-form" class="form">
+                <div class="form__group">
+                    <label for="name">Your Name</label>
+                    <input type="text" name="name" id="name" class="form__input">
+                </div>
+                <div class="form__group">
+                    <label for="title">Feedback Title</label>
+                    <input type="text" name="title" id="title" class="form__input">
+                </div>
+                <div class="form__group">
+                    <label for="text">Feedback Detail</label>
+                    <textarea name="text" id="text" class="form__input"></textarea>
+                </div>
+            </form>
+        </div>
+
+        <div class="modal__footer">
+            <button class="modal__button feedback__button" id="add-button" onclick='monkshu_env.components["create-feedback"].createFeedback()'>
+                Add feedback
+            </button>
+            <button class="modal__button feedback__button modal__button_cancel" id="cancel-button" onclick='monkshu_env.components["create-feedback"].homePage()'>
+                Cancel
+            </button>
+        </div>
+    </div>
+</div

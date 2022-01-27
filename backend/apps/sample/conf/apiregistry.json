@@ -1,0 +1,8 @@
+  
+{
+    "/apis/create-feedback": "/apis/createFeedback.js?needsToken=false&addsToken=sub:access",
+    "/apis/update-feedback": "/apis/editFeedback.js?needsToken=false&addsToken=sub:access",
+    "/apis/delete-feedback": "/apis/deleteFeedback.js?needsToken=false&addsToken=sub:access",
+    "/apis/list-feedbacks": "/apis/listFeedbacks.js?needsToken=false&addsToken=sub:access",
+    "/apis/get-feedback": "/apis/getFeedback.js?needsToken=false&addsToken=sub:access"
+}
