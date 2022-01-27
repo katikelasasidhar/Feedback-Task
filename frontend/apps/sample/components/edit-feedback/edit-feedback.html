@@ -3,7 +3,7 @@
     .modal{
    
     position: fixed;
-    top: 20%;
+    top: 15%;
     left: 15%;
     width: 70%;
     height: 90%;
@@ -33,9 +33,9 @@ input{
     width: 100%;
     padding: 13px 24px;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 20px;
     line-height: 22px;
-    color: rgb(58,67,116);
+    color: rgb(27, 41, 119);
     background: rgb(247,248,253) none repeat scroll 0% 0%;   
     border-radius: 5px;
     border: medium none;
@@ -51,9 +51,9 @@ textarea{
     border-radius: 5px;
     height: 96px;
     padding: 24px;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 22px;
-    color: rgb(140, 146, 179);
+    color: rgb(27, 41, 119);
     margin-bottom: 24px;
 }
 
@@ -96,15 +96,15 @@ textarea{
         <div class="modal__body">
             <form id="add-feedback-form" class="form">
                 <div class="form__group">
-                    <label for="name">Your Name</label>
+                    <label for="name" class="label">Your Name</label>
                     <input type="text" name="name" id="name" class="form__input"value={{name}}>
                 </div>
                 <div class="form__group">
-                    <label for="title">Feedback Title</label>
+                    <label for="title"class="label">Feedback Title</label>
                     <input type="text" name="title" id="title" class="form__input"value={{title}}>
                 </div>
                 <div class="form__group">
-                    <label for="text">Feedback Detail</label>
+                    <label for="text" class="label">Feedback Detail</label>
                     <textarea name="text" id="text" class="form__input" value={{detail}}></textarea>
                 </div>
             </form>
@@ -112,7 +112,7 @@ textarea{
 
         <div class="modal__footer">
             <button class="modal__button feedback__button" id="add-button" onclick='monkshu_env.components["edit-feedback"].editFeedback()'>
-                Update feedback
+                Update Feedback
             </button>
             <button class="modal__button feedback__button modal__button_cancel" id="cancel-button" onclick='monkshu_env.components["edit-feedback"].homePage()'>
                 Cancel

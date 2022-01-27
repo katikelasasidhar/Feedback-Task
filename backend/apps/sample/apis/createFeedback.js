@@ -25,11 +25,14 @@ const createFeedback = async (jsonReq) => {
         if (jsonReq.feedback) {
             const connection = await db.getMongoDbCollection();
             const feedback = await connection.insertMany(jsonReq.feedback);
+            
             if (feedback) return true;
         }
         return false;
     } catch (error) {
+        
         throw error;
+
     }
 }
 const validateRequest = jsonReq => (jsonReq && jsonReq.feedback);
