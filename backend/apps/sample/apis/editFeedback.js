@@ -23,8 +23,8 @@ exports.doService = async jsonReq => {
 const editFeedback = async (jsonReq) => {
     try {
         const collection = await db.getMongoDbCollection();
-        const { id, ...feedbackObject} = jsonReq;
-        const updateFeedback=await collection.updateOne({ "_id": db.ObjectID(jsonReq.id) },{ $set:feedbackObject});
+        const { id, ...feedbackObject } = jsonReq;
+        const updateFeedback = await collection.updateOne({ "_id": db.ObjectID(jsonReq.id) }, { $set: feedbackObject });
         if (updateFeedback) return true;
         return false;
     } catch (error) {

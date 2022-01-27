@@ -1,52 +1,17 @@
-
-    
-    <style>
-        .feedback__header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: rgb(55,63,104) none repeat scroll 0% 0%;
-    border-radius: 10px;
-    padding: 20px;
-    width: 80%;
-}
-h3{
-    font-size: 20px;
-    line-height: 26px;
-    color: white;
-    font-weight: 700;
-  
-}
-
-.feedback__button{
-    outline: none;
-    display: inline;
-    padding: 12px 24px;
-    border-radius: 10px;
-    transition: all 0.3s ease 0s;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 20px;
-    color: rgb(242, 244, 254);
-    cursor: pointer;
-    border: medium none;
-    background: rgb(173, 31, 234) none repeat scroll 0% 0%;   
-}
-
-.feedback__button:hover{
-    background: rgb(199, 90, 246) none repeat scroll 0% 0%;   
-    transform: translateX(0rem) translateY(-0.125rem);
-}
-    </style>
-  
+<script type="text/javascript">
+    $$.requireCSS(
+        `${APP_CONSTANTS.APP_PATH}/components/feedback-header/feedback-header.css`
+    );
+</script>
 
 <div class="feedback__header" id="feedback-header">
     <div class="left__header">
-        <h3> Feedbacks</h3>
+        <h3>Feedbacks</h3>
     </div>
 
     <div class="right__header">
-        <button class="feedback__button" id="add-feedback-button" onclick='monkshu_env.components["feedback-header"].loadCreateFeedbackPage()'>
+        <button class="feedback__button" id="add-feedback-button"
+            onclick='monkshu_env.components["feedback-header"].loadCreateFeedbackPage()'>
             + Add Feedback
         </button>
     </div>

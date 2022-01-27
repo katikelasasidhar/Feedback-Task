@@ -16,7 +16,7 @@ exports.doService = async jsonReq => {
         if (!feedbacks) return response;
         //if (!feedbacks) return API_CONSTANTS.API_RESPONSE_FALSE;
         return { ...response, ...{ result: true }, ...{ feedbacks } };
-       //return { result:true,results:{feedbacks}}
+        //return { result:true,results:{feedbacks}}
     } catch (error) {
         console.error(error);
         return API_CONSTANTS.API_RESPONSE_SERVER_ERROR;

@@ -1,66 +1,32 @@
-<style>
-    .feedback__item{
-    background: rgb(255,255,255) none repeat scroll 0% 0%;   
-    border-radius: 10px;
-    padding: 28px 32px;
-    display: flex;
-   
-    justify-content: space-between;
-    align-items: center;
-    transition: all 0.3s ease 0s;
-    margin: 20px 0;
-    width:100%;
-}
-h4{
-    font-size: 18px;
-}
-h5{
-    font-size: 18px;
-}
-p{
-    font-size: 16px;
-}
-.feedback__button{
-    outline: none;
-    display: inline;
-    padding: 12px 24px;
-    border-radius: 10px;
-    transition: all 0.3s ease 0s;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
-    color: rgb(242, 244, 254);
-    cursor: pointer;
-    border: medium none;
-    background: rgb(173, 31, 234) none repeat scroll 0% 0%;   
-}
-
-
-</style>
-
-
+<script type="text/javascript">
+  $$.requireCSS(
+    `${APP_CONSTANTS.APP_PATH}/components/feedback-lists/feedback-lists.css`
+  );
+</script>
 <div class="feedback__list" id="feedback-list">
-    {{#feedbacks}}
-    <div class="feedback__item item-animation">
-        <div class="feedback__details">
-            <h4 class="feedback__name" id="feedback-name">
-               {{name}}
-            </h4>
-            <h5 class="feedback__title" id="feedback-title">
-             {{title}}
-            </h5>
-            <p class="feedback__text" id="feedback-text">
-               {{detail}}
-            </p>
-        </div>
-        <div class="feedback__buttons">
-            <button class="feedback__button" id="edit-button" onclick='monkshu_env.components["feedback-lists"].loadEditFeedBackPage("{{_id}}")'>
-                Edit
-            </button>
-            <button class="feedback__button" id="delete-button" onclick='monkshu_env.components["feedback-lists"].deleteFeedback("{{_id}}")'>
-                Delete
-            </button>
-        </div>
-    </div>    
-   {{/feedbacks}}
+  {{#feedbacks}}
+  <div class="feedback__item item-animation">
+    <div class="feedback__details">
+      <h4 class="feedback__reporter" id="feedback-reporter">{{reporter}}</h4>
+      <h5 class="feedback__title" id="feedback-title">{{title}}</h5>
+      <p class="feedback__details" id="feedback-details">{{details}}</p>
+    </div>
+    <div class="feedback__buttons">
+      <button
+        class="feedback__button"
+        id="edit-button"
+        onclick='monkshu_env.components["feedback-lists"].loadEditFeedBackPage("{{_id}}")'
+      >
+        Edit
+      </button>
+      <button
+        class="feedback__button"
+        id="delete-button"
+        onclick='monkshu_env.components["feedback-lists"].deleteFeedback("{{_id}}")'
+      >
+        Delete
+      </button>
+    </div>
+  </div>
+  {{/feedbacks}}
 </div>

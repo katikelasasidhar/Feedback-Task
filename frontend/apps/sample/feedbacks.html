@@ -4,28 +4,27 @@
     <meta charset="UTF-8" />
     <title>{{i18n.Title}}</title>
     <style>
-      *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-body{
-    font-family: 'Jost', sans-serif;
-    
-    background-color: rgb(220,229,234);
+      body {
+        font-family: "Jost", sans-serif;
 
-    line-height: 1.5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-}
+        background-color: rgb(220, 229, 234);
 
-#container{
-    width: 60%;
-}
+        line-height: 1.5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+      }
 
+      #container {
+        width: 60%;
+      }
     </style>
     <script type="module">
       import { feedback_header } from "./components/feedback-header/feedback-header.mjs";
@@ -34,15 +33,16 @@ body{
       create_feedback.register();
       import { feedback_lists } from "./components/feedback-lists/feedback-lists.mjs";
       feedback_lists.register();
-      feedback_lists.listFeedbacks()
+      feedback_lists.listFeedbacks();
       import { edit_feedback } from "./components/edit-feedback/edit-feedback.mjs";
       edit_feedback.register();
     </script>
   </head>
+
   <body>
     <div id="container">
       <feedback-header></feedback-header>
-      <feedback-lists></feedback-lists> 
+      <feedback-lists></feedback-lists>
     </div>
   </body>
 </html>

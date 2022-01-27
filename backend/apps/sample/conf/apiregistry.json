@@ -1,4 +1,3 @@
-  
 {
     "/apis/create-feedback": "/apis/createFeedback.js?needsToken=false&addsToken=sub:access",
     "/apis/update-feedback": "/apis/editFeedback.js?needsToken=false&addsToken=sub:access",
