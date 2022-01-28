@@ -20,7 +20,6 @@ const listFeedbacks = async () => {
     APP_CONSTANTS.API_FEEDBACKLISTS,
     "POST",
     payloads,
-    false,
     true
   );
   if (!resp || !resp.result) router.reload();

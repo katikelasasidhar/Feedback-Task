@@ -17,8 +17,22 @@ const getMongoDbCollection = async () => {
         throw error;
     }
 }
+const getMongoDbUserCollection = async () => {
+    try {
+        // Use connect method to connect to the server
+        await client.connect();
+        console.log('Connected successfully to server');
+        const db = client.db(dbName);
+        const collection = db.collection('users');
+        if (collection) return collection;
+        throw new Error('Unable to connect to mongodb');
+    } catch (error) {
+        throw error;
+    }
+}
 
 module.exports = {
     ObjectID,
-    getMongoDbCollection
+    getMongoDbCollection,
+    getMongoDbUserCollection
 }

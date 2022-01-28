@@ -28,7 +28,6 @@ const createFeedback = async () => {
       APP_CONSTANTS.API_CREATEFEEDBACK,
       "POST",
       payloads,
-      false,
       true
     );
     console.log(resp);

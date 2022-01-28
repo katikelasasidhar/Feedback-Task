@@ -1,7 +1,9 @@
 {
-    "/apis/create-feedback": "/apis/createFeedback.js?needsToken=false&addsToken=sub:access",
-    "/apis/update-feedback": "/apis/editFeedback.js?needsToken=false&addsToken=sub:access",
-    "/apis/delete-feedback": "/apis/deleteFeedback.js?needsToken=false&addsToken=sub:access",
-    "/apis/list-feedbacks": "/apis/listFeedbacks.js?needsToken=false&addsToken=sub:access",
-    "/apis/get-feedback": "/apis/getFeedback.js?needsToken=false&addsToken=sub:access"
+    "/apis/login": "/apis/login.js?needsToken=false&addsToken=sub:access",
+    "/apis/register": "/apis/register.js?needsToken=false&addsToken=sub:access",
+    "/apis/create-feedback": "/apis/createFeedback.js?needsToken=true&key=fsRolA1Si81YmT6fWwkXaV9l4I4DzhOo",
+    "/apis/update-feedback": "/apis/editFeedback.js?needsToken=true&key=fsRolA1Si81YmT6fWwkXaV9l4I4DzhOo",
+    "/apis/delete-feedback": "/apis/deleteFeedback.js?needsToken=true&key=fsRolA1Si81YmT6fWwkXaV9l4I4DzhOo",
+    "/apis/list-feedbacks": "/apis/listFeedbacks.js?needsToken=true&key=fsRolA1Si81YmT6fWwkXaV9l4I4DzhOo",
+    "/apis/get-feedback": "/apis/getFeedback.js?needsToken=true&key=fsRolA1Si81YmT6fWwkXaV9l4I4DzhOo"
 }

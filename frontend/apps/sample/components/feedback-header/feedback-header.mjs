@@ -8,6 +8,18 @@ const loadCreateFeedbackPage = () =>
   (document.querySelector("#container").innerHTML =
     "<create-feedback></create-feedback>");
 
+const logout = async () => {
+  try {
+    session.set(APP_CONSTANTS.USERID, "");
+    securityguard.setCurrentRole(APP_CONSTANTS.GUEST_ROLE);
+    await application.init();
+    await application.main();
+    router.loadPage(APP_CONSTANTS.LOGIN_THTML);
+  } catch (error) {
+    console.error(error);
+  }
+};
+
 //call all other apis API_CREATEBOOKS
 function register() {
   // convert this all into a WebComponent so we can use it
@@ -24,4 +36,5 @@ export const feedback_header = {
   trueWebComponentMode,
   register,
   loadCreateFeedbackPage,
+  logout,
 };
