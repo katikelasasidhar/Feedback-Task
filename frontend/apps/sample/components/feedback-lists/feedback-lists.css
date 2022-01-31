@@ -36,3 +36,9 @@ p {
   border: medium none;
   background: rgb(173, 31, 234) none repeat scroll 0% 0%;
 }
+.feedback__list{
+ width:100%;
+}
+.feedback__details{
+  overflow:auto;
+}

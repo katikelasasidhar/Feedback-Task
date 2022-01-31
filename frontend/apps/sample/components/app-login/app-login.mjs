@@ -7,7 +7,7 @@ import { session } from "/framework/js/session.mjs";
 import { monkshu_component } from "/framework/js/monkshu_component.mjs";
 import { apimanager as apiman } from "/framework/js/apimanager.mjs";
 import { APP_CONSTANTS } from "../../js/constants.mjs";
-import {securityguard} from "/framework/js/securityguard.mjs";
+import { securityguard } from "/framework/js/securityguard.mjs";
 
 const login = async () => {
   const apiPayloads = {
@@ -21,17 +21,13 @@ const login = async () => {
     false,
     true
   );
-  
+
   if (!responseObject || !responseObject.result) {
-    
-    alert("Invalid user");
-    
     router.loadPage(APP_CONSTANTS.LOGIN_HTML);
-  
   } else {
-   session.set(APP_CONSTANTS.USERID, responseObject.validatedUser._id);
+    session.set(APP_CONSTANTS.USERID, responseObject.validatedUser._id);
     securityguard.setCurrentRole(APP_CONSTANTS.USER_ROLE);
-  console.log(responseObject)
+    console.log(responseObject)
     router.loadPage(APP_CONSTANTS.FEEDBACKS_HTML);
   }
 };
@@ -53,5 +49,3 @@ export const app_login = {
   register,
   login
 };
-/*
-*/

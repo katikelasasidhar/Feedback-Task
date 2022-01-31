@@ -2,6 +2,8 @@ import { router } from "/framework/js/router.mjs";
 import { session } from "/framework/js/session.mjs";
 import { apimanager as apiman } from "/framework/js/apimanager.mjs";
 import { securityguard } from "/framework/js/securityguard.mjs";
+import { APP_CONSTANTS } from "../../js/constants.mjs";
+
 const init = async (_) => {
   window.APP_CONSTANTS = (await import("./constants.mjs")).APP_CONSTANTS;
   window.LOG = (await import("/framework/js/log.mjs")).LOG;

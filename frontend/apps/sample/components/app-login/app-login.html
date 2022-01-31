@@ -1,21 +1,19 @@
 <script type="text/javascript">
-    $$.requireCSS(
-      `${APP_CONSTANTS.APP_PATH}/components/app-login/app-login.css`
-    );
-  </script>
+  $$.requireCSS(
+    `${APP_CONSTANTS.APP_PATH}/components/app-login/app-login.css`
+  );
+</script>
 
 <div class="login-page">
-    <div class="form">
-      <div class="login">
-        <div class="login-header">
-          <h3>LOGIN</h3>
-          <p>Please enter your credentials to login.</p>
-        </div>
+  <div class="form">
+    <div class="login">
+      <div class="login-header">
+        <h3>LOGIN</h3>
+        <p>Please enter your credentials to login.</p>
       </div>
-      <form class="login-form">
-        <input type="text" placeholder="username" id="u_name"/>
-        <input type="password" placeholder="password" id="u_password"/>
-        <button class="login__button"id="login-button"onclick="monkshu_env.components['app-login'].login()">login</button>
-      </form>
     </div>
+    <input type="text" placeholder="username" id="u_name" />
+    <input type="password" placeholder="password" id="u_password" />
+    <button class="login__button" id="login-button" onclick="monkshu_env.components['app-login'].login()">login</button>
   </div>
+</div>

@@ -3,11 +3,11 @@
  * License: MIT - see enclosed license.txt file.
  */
 import { monkshu_component } from "/framework/js/monkshu_component.mjs";
-import { router } from "/framework/js/router.mjs";
 import { session } from "/framework/js/session.mjs";
 import { securityguard } from "/framework/js/securityguard.mjs";
-import { application} from "../../js/application.mjs"
+import { router } from "/framework/js/router.mjs";
 import { APP_CONSTANTS } from "../../js/constants.mjs";
+
 const loadCreateFeedbackPage = () =>
   (document.querySelector("#container").innerHTML =
     "<create-feedback></create-feedback>");
@@ -16,8 +16,6 @@ const logout = async () => {
   try {
     session.set(APP_CONSTANTS.USERID, "");
     securityguard.setCurrentRole(APP_CONSTANTS.GUEST_ROLE);
-    await application.init();
-    await application.main();
     router.loadPage(APP_CONSTANTS.LOGIN_HTML);
   } catch (error) {
     console.error(error);

@@ -1,14 +1,21 @@
 
 ## Features of the Feedback app
 
- ---> Anyone can Create Feedbacks
+ ---> Only Login user can Create Feedbacks
  
- ---> Anyone can Update Feedbacks
+ ---> Only Login user can Update Feedbacks
  
- ---> Anyone can Delete Feedbacks
+ ---> Only Login user can Delete Feedbacks
  
- ---> Anyone can Read Feedbacks
+ ---> Only Login user can Read Feedbacks
  
+## Credentials to login to the app
+
+1) name:sasidhar password:sasidhar
+
+2) name:sasidhar2 password:sasidhar2
+
+
 ## Getting Started with Feedback app
 
 This project was developed using monkshu(https://github.com/TekMonksGitHub/monkshu.git)

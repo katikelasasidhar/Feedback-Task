@@ -1,4 +1,3 @@
-
 {
     "/apis/login": "/apis/login.js?needsToken=false&addsToken=sub:access",
     "/apis/register": "/apis/register.js?needsToken=false&addsToken=sub:access",
@@ -6,5 +5,5 @@
     "/apis/update-feedback": "/apis/editFeedback.js?needsToken=true&key=fsRolA1Si81YmT6fWwkXaV9l4I4DzhOo",
     "/apis/delete-feedback": "/apis/deleteFeedback.js?needsToken=true&key=fsRolA1Si81YmT6fWwkXaV9l4I4DzhOo",
     "/apis/list-feedbacks": "/apis/listFeedbacks.js?needsToken=true&key=fsRolA1Si81YmT6fWwkXaV9l4I4DzhOo",
-    "/apis/get-feedback":   "/apis/getFeedback.js?needsToken=true&key=fsRolA1Si81YmT6fWwkXaV9l4I4DzhOo"
+    "/apis/get-feedback": "/apis/getFeedback.js?needsToken=true&key=fsRolA1Si81YmT6fWwkXaV9l4I4DzhOo"
 }

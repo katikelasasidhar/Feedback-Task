@@ -16,7 +16,6 @@ const loadFeedback = async () => {
     APP_CONSTANTS.API_GETFEEDBACK,
     "POST",
     payloads,
-    false,
     true
   );
   if (!resp || !resp.result) router.reload();
