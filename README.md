@@ -11,9 +11,9 @@
  
 ## Credentials to login to the app
 
-1) name:sasidhar password:sasidhar
+1) name:sasidhar      password:sasidhar
 
-2) name:sasidhar2 password:sasidhar2
+2) name:sasidhar2     password:sasidhar2
 
 
 ## Getting Started with Feedback app
