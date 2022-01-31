@@ -11,10 +11,22 @@
  
 ## Credentials to login to the app
 
-1) name:sasidhar password:sasidhar
+1) name:sasidhar 
+   password:sasidhar
 
-2) name:sasidhar2 password:sasidhar2
+2) name:sasidhar2 
+   password:sasidhar2
 
+## To register use Talend Api Tester or Postman
+
+====> Method : Post
+
+====> URI:http://localhost:9090/apis/register
+
+====>Body : { 
+               "u_name":"tekmonks",
+               "u_password":"deeplogictech"
+            }
 
 ## Getting Started with Feedback app
 
