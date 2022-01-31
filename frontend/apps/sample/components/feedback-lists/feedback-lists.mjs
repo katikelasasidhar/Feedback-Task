@@ -34,7 +34,6 @@ const deleteFeedback = async (id) => {
     APP_CONSTANTS.API_DELETEFEEDBACK,
     "POST",
     payloads,
-    false,
     true
   );
   if (!resp || !resp.result) router.reload();

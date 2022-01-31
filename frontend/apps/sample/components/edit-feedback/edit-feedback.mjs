@@ -16,6 +16,7 @@ const loadFeedback = async () => {
     APP_CONSTANTS.API_GETFEEDBACK,
     "POST",
     payloads,
+    false,
     true
   );
   if (!resp || !resp.result) router.reload();
@@ -38,7 +39,6 @@ const editFeedback = async () => {
     APP_CONSTANTS.API_UPDATEFEEDBACK,
     "POST",
     payloads,
-    false,
     true
   );
   if (!resp || !resp.result) router.reload();

@@ -23,7 +23,7 @@ exports.doService = async (jsonReq) => {
 const validateUser = async (jsonReq) => {
   try {
     const connection = await db.getMongoDbUserCollection();
-    const user = await connection.findOne({ u_name: jsonReq.u_name });
+    const user = await connection.findOne({ "u_name": jsonReq.u_name });
     if(!user) return false;
     if(user.u_password !== sha512(jsonReq.u_password, user.u_name)) return false;
     return user;
