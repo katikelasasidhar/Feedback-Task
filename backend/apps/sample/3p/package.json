@@ -9,7 +9,6 @@
   "author": "sasidhar",
   "license": "ISC",
   "dependencies": {
-    "mangodb": "^1.0.0",
     "mongodb": "^4.3.1",
     "mysql": "^2.18.1"
   }

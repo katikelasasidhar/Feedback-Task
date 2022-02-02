@@ -4,7 +4,7 @@
  */
 // Custom modules
 const API_CONSTANTS = require(`${CONSTANTS.APPROOTDIR}/sample/apis/lib/constants`);
-const db = require(`./lib/mangodb`);
+const db = require(`./lib/Mongodb`);
 
 exports.doService = async (jsonReq) => {
     // Validate API request and check mandatory payload required
